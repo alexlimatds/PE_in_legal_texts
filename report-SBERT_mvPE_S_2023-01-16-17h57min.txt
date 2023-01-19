@@ -1,0 +1,46 @@
+RESULTS REPORT
+Model: SBERT_mvPE_S
+Evaluation: test set (many random seeds)
+
+Averages:
+                   Precision  P std   Recall  R std     F1    F1 std
+MLPClassifier        0.6377   0.0120  0.4072  0.0109  0.4970  0.0103
+LinearSVC            0.5295   0.0172  0.3148  0.0310  0.3935  0.0210
+LogisticRegression   0.6456   0.0003  0.3201  0.0006  0.4280  0.0006
+GaussianNB           0.4054   0.0000  0.5817  0.0000  0.4778  0.0000
+
+** Detailed report **
+
+Scores:
+Model: MLPClassifier
+              Train P   Train R  Train F1    Test P    Test R   Test F1
+Iteration 0  0.691899  0.456020  0.549725  0.639462  0.420649  0.507473
+Iteration 1  0.674374  0.432706  0.527163  0.626168  0.395280  0.484629
+Iteration 2  0.701726  0.460667  0.556201  0.647862  0.420059  0.509664
+Iteration 3  0.685059  0.433195  0.530763  0.622018  0.400000  0.486894
+Iteration 4  0.714134  0.439064  0.543793  0.653179  0.400000  0.496158
+
+Model: LinearSVC
+              Train P   Train R  Train F1    Test P    Test R   Test F1
+Iteration 0  0.546267  0.353713  0.429391  0.541045  0.342183  0.419227
+Iteration 1  0.528660  0.384202  0.445000  0.498779  0.361652  0.419289
+Iteration 2  0.567419  0.295019  0.388201  0.549376  0.285546  0.375776
+Iteration 3  0.546035  0.313769  0.398530  0.529475  0.291445  0.375951
+Iteration 4  0.561590  0.305128  0.395415  0.528723  0.293215  0.377230
+
+Model: LogisticRegression
+              Train P   Train R  Train F1    Test P    Test R   Test F1
+Iteration 0  0.671492  0.332763  0.445002  0.645660  0.320354  0.428233
+Iteration 1  0.671163  0.332600  0.444784  0.645238  0.319764  0.427613
+Iteration 2  0.671490  0.332926  0.445147  0.645660  0.320354  0.428233
+Iteration 3  0.671548  0.332681  0.444941  0.645585  0.319174  0.427161
+Iteration 4  0.671325  0.332844  0.445038  0.646081  0.320944  0.428853
+
+Model: GaussianNB
+              Train P   Train R  Train F1    Test P    Test R   Test F1
+Iteration 0  0.418252  0.566398   0.48118  0.405428  0.581711  0.477829
+Iteration 1  0.418252  0.566398   0.48118  0.405428  0.581711  0.477829
+Iteration 2  0.418252  0.566398   0.48118  0.405428  0.581711  0.477829
+Iteration 3  0.418252  0.566398   0.48118  0.405428  0.581711  0.477829
+Iteration 4  0.418252  0.566398   0.48118  0.405428  0.581711  0.477829
+

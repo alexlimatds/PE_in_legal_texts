@@ -1,0 +1,15 @@
+RESULTS REPORT
+Model: ModifiedShulayeva
+Evaluation: test set (many random seeds)
+Feature set info: embedding dim: 4053 => PoS tag features: 51, Dependecy pair features: 2000, N-grams features: 2000
+Averages:
+           Precision  P std   Recall  R std     F1    F1 std
+GaussianNB   0.4115   0.0000  0.7504  0.0000  0.5316  0.0000
+
+** Detailed report **
+
+Scores:
+Model: GaussianNB
+              Train P   Train R  Train F1    Test P    Test R  Test F1
+Iteration 0  0.434661  0.809652  0.565652  0.411517  0.750442  0.53155
+

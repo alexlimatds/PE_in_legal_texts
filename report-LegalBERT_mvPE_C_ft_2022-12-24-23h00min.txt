@@ -1,0 +1,133 @@
+RESULTS REPORT
+Model: LegalBERT_mvPE_C
+Encoder: nlpaueb/legal-bert-base-uncased
+Evaluation: test set (many random seeds)
+Train scheme: fine-tuning
+Features combination: concatenation
+Batch size: 16
+Dropout rate: 0.1
+Learning rate: 1e-05
+mvPE step: 3000
+Max sentence length: 512
+Adam Epsilon: 1e-08
+LR warmup: True
+Use MLP: False
+Use Normalization layer: False
+Weight decay: 0.001
+Train time: 11h28m56s
+GPU name: Quadro RTX 6000
+GPU memory: 22.17
+
+Averages:
+Epoch Train loss    std    Test loss    std    Precision  P std   Recall  R std     F1    F1 std
+   1   0.438290   0.011737  0.437610  0.052091   0.6297   0.1011  0.4995  0.1639  0.5260  0.0467
+   2   0.398389   0.007799  0.422836  0.020602   0.6042   0.0473  0.5086  0.1256  0.5374  0.0606
+   3   0.388951   0.007876  0.417179  0.021562   0.5973   0.0386  0.5212  0.0852  0.5501  0.0368
+   4   0.369345   0.006383  0.412089  0.007258   0.6269   0.0115  0.4870  0.0079  0.5481  0.0077
+
+*** Detailed report ***
+
+Confusion matrices
+------------------
+Facts: 0 
+Other: 1 
+=> Iteration 0:
+Epoch 1:
+[[ 682 1013]
+ [ 346 6005]]
+Epoch 2:
+[[1084  611]
+ [ 902 5449]]
+Epoch 3:
+[[1066  629]
+ [ 911 5440]]
+Epoch 4:
+[[ 832  863]
+ [ 497 5854]]
+=> Iteration 1:
+Epoch 1:
+[[ 752  943]
+ [ 316 6035]]
+Epoch 2:
+[[ 962  733]
+ [ 688 5663]]
+Epoch 3:
+[[ 745  950]
+ [ 425 5926]]
+Epoch 4:
+[[ 841  854]
+ [ 500 5851]]
+=> Iteration 2:
+Epoch 1:
+[[1353  342]
+ [1675 4676]]
+Epoch 2:
+[[1052  643]
+ [ 786 5565]]
+Epoch 3:
+[[ 874  821]
+ [ 497 5854]]
+Epoch 4:
+[[ 835  860]
+ [ 479 5872]]
+=> Iteration 3:
+Epoch 1:
+[[ 900  795]
+ [ 592 5759]]
+Epoch 2:
+[[ 604 1091]
+ [ 323 6028]]
+Epoch 3:
+[[ 706  989]
+ [ 462 5889]]
+Epoch 4:
+[[ 808  887]
+ [ 525 5826]]
+=> Iteration 4:
+Epoch 1:
+[[ 546 1149]
+ [ 201 6150]]
+Epoch 2:
+[[ 608 1087]
+ [ 302 6049]]
+Epoch 3:
+[[1026  669]
+ [ 779 5572]]
+Epoch 4:
+[[ 811  884]
+ [ 457 5894]]
+
+Scores
+------
+Epoch: 1
+             Train loss  Test loss  Precision    Recall        F1
+Iteration 0    0.447174   0.440766   0.663424  0.402360  0.500918
+Iteration 1    0.444861   0.386341   0.704120  0.443658  0.544336
+Iteration 2    0.418721   0.534891   0.446830  0.798230  0.572941
+Iteration 3    0.449709   0.401695   0.603217  0.530973  0.564794
+Iteration 4    0.430985   0.424357   0.730924  0.322124  0.447174
+
+Epoch: 2
+             Train loss  Test loss  Precision    Recall        F1
+Iteration 0    0.401651   0.423156   0.545821  0.639528  0.588970
+Iteration 1    0.403338   0.401632   0.583030  0.567552  0.575187
+Iteration 2    0.384530   0.420882   0.572361  0.620649  0.595528
+Iteration 3    0.406734   0.460787   0.651564  0.356342  0.460717
+Iteration 4    0.395694   0.407725   0.668132  0.358702  0.466795
+
+Epoch: 3
+             Train loss  Test loss  Precision    Recall        F1
+Iteration 0    0.391690   0.435346   0.539201  0.628909  0.580610
+Iteration 1    0.389917   0.395359   0.636752  0.439528  0.520070
+Iteration 2    0.375686   0.394452   0.637491  0.515634  0.570124
+Iteration 3    0.400059   0.448453   0.604452  0.416519  0.493189
+Iteration 4    0.387403   0.412286   0.568421  0.605310  0.586286
+
+Epoch: 4
+             Train loss  Test loss  Precision    Recall        F1
+Iteration 0    0.371249   0.410526   0.626035  0.490855  0.550265
+Iteration 1    0.369440   0.404182   0.627144  0.496165  0.554018
+Iteration 2    0.358836   0.409047   0.635464  0.492625  0.555002
+Iteration 3    0.378768   0.425792   0.606152  0.476696  0.533686
+Iteration 4    0.368430   0.410900   0.639590  0.478466  0.547418
+
